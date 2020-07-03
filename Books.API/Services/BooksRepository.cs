@@ -9,11 +9,12 @@ using System.Threading.Tasks;
 
 namespace Books.API.Services
 {
-    public class BooksRepository : IBookRepository, IDisposable
+    public class BooksRepository : IBooksRepository, IDisposable
     {
         private BooksContext _context;
         public BooksRepository(BooksContext context)
         {
+            
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
@@ -26,6 +27,7 @@ namespace Books.API.Services
 
         public async Task<IEnumerable<Book>> GetBooksAsync()
         {
+            
             return await _context.Books.Include(b => b.Author).ToListAsync();
         }
 

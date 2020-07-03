@@ -1,0 +1,3 @@
+﻿1>------ Rebuild All started: Project: Books.API, Configuration: Debug Any CPU ------
+1>Books.API -> C:\Users\rodrigo.zamperlini\source\repos\Books\Books.API\bin\Debug\netcoreapp3.1\Books.API.dll
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
